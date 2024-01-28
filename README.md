@@ -237,25 +237,13 @@ If you have some any question or advice, Welcome to [issue](https://github.com/m
 
 The extension and source are licensed under the [MIT license](LICENSE.txt).
 
-## Donate
+## Jamie Notes
 
-If you like this plugin, you can donate to me to support me develop it better, thank you!
+Need to build and install locally
 
-PayPal:
+```bash
+npm install
+npm run package
+EXTENSION_VERSION=$(jq '.version' ./package.json | tr -d '"') code --install-extension "./vscode-paste-image-$EXTENSION_VERSION.vsix"
+```
 
-<a href="https://www.paypal.me/mushanshitiancai"><img src="https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif"></img></a>
-
-支付宝:
-
-![alipay](https://raw.githubusercontent.com/mushanshitiancai/vscode-paste-image/master/res/alipay.png)
-
-微信支付:
-
-![weixin](https://raw.githubusercontent.com/mushanshitiancai/vscode-paste-image/master/res/weixin.png)
-
-Donator list：
-- 白色咖啡
-- Paul Egbert
-- CallOnISS
-- 亮亮
-- Shahid Iqbal
