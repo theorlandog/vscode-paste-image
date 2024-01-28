@@ -29,7 +29,7 @@
     "keybindings"
   ],
   "engines": {
-    "@types/vscode": "latest"
+    "vscode": "^1.85.0"
   },
   "categories": [
     "Other"
@@ -131,7 +131,7 @@
   },
   "scripts": {
     "test": "vscode-test",
-    "vscode:prepublish": "tsc"
+    "package": "vsce package"
   },
   "dependencies": {
     "copy-paste": "^1.2.0",
